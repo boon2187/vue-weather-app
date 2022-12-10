@@ -5,7 +5,7 @@
     {{ props.results }}
 </template>
 
-<script>
+<script setup>
     const props = defineProps({
         results: Object
     })
