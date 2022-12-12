@@ -1,12 +1,12 @@
 <!-- Reslut.vue -->
 
 <template>
-    <div>{{ results.country }}</div>
-    <div>{{ results.cityName }}</div>
-    <div>{{ results.temperature }}</div>
-    <div>
-        <img :src="results.icon" alt="" />
-        <span>{{ results.condtionText }}</span>
+    <div v-if="results.country">{{ results.country }}</div>
+    <div v-if="results.cityName">{{ results.cityName }}</div>
+    <div >{{ results.temperature }}</div>
+    <div v-if="results.icon">
+        <img :src="results.icon" alt="icon" />
+        <span>{{ results.conditionText }}</span>
     </div>
 </template>
 
