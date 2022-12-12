@@ -1,8 +1,9 @@
 <!-- Reslut.vue -->
 
 <template>
-    <h2>気象データ</h2>
-    {{ props.results }}
+    <div>{{ results.country }}</div>
+    <div>{{ results.cityName }}</div>
+    <div>{{ results.temperature }}</div>
 </template>
 
 <script setup>
