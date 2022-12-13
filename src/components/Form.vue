@@ -13,7 +13,7 @@ import { ref } from "vue";
 const city = ref("");
 
 const submitForm = () => {
-    emits("submit-form");
+    emits("submit-form", city.value);
 }
 
 // 上位コンポーネント（App.vue）にエミットする
